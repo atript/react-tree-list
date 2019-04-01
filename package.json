@@ -1,0 +1,15 @@
+{
+  "name": "react-tree-list",
+  "version": "1.0.0",
+  "description": "Tree view Component for react",
+  "main": "src/index.js",
+  "repository": "https://github.com/atript/react-tree-list",
+  "author": "Roman <rastopyr@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jss": "^9.8.7",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-jss": "^8.6.1"
+  }
+}
