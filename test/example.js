@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import { render } from "react-dom";
 import injectSheet, { jss, ThemeProvider } from "react-jss";
 
-import TreeMenu from "../src/TreeMenu";
+import { TreeMenu } from "../dist";
 
 const data = [
   {

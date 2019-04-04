@@ -17,7 +17,7 @@ const TreeNode = ({
   checkedKeys,
   level = 0
 }) => {
-  const [state, setState] = useState({
+  const [state, setState] = React.useState({
     collapsed: false,
     checked: checkedKeys.includes(node.id)
   });
@@ -26,6 +26,15 @@ const TreeNode = ({
   const { label, nodes } = node;
 
   const hasChild = nodes && !!nodes.length;
+
+  useEffect(() => {
+    setState((prevState) => {
+      return {
+        ...prevState,
+        checked: checkedKeys.includes(node.id)
+      };
+    });
+  }, [checkedKeys.length]);
 
   const onClickLabel = (e) => {
     e.stopPropagation();
